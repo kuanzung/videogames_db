@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // import routes
 const gamesRoute = require("./routes/games");
 
-app.use("/games", gamesRoute);
+app.use("/api/games", gamesRoute);
 
 // routes
 app.get("/", (req, res) => {
